@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.buttons {
+  text-align: center;
+}
+
+.button-text {
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 4.2px;
+  color: #101010;
+  display: inline;
+}
+
+/* footer */
+
+.map-canvas {
+  height: 500px;
+  width: 100%;
+}
+
+.address-heading,
+.contact-heading {
+  margin: 20px 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 1440px) {
+  /* footer */
+  .map-canvas {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* footer */
+  .map-canvas {
+    height: 250px;
+  }
+}
+/* contact us page */
+
+.contact-us {
+  padding: 10% 0;
+}
+
+.contact-us {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.contact-us-left > .heading {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #282828;
+  margin-bottom: 15px;
+}
+
+.contact-us-left .address,
+.contact,
+.email,
+.website {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #282828;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.contact-us-link {
+  color: #282828;
+}
+
+.contact-us-left .label {
+  font-weight: bold;
+  color: #cfb569;
+}
+
+.contact-us-form-row {
+  margin: 10px 0;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 15px 0;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 2.22;
+  text-align: left;
+  color: #282828;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 15px 0;
+}
+
+textarea:focus {
+  outline-width: 0;
+}
+
+.contact-submit-button {
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+}
+
+.contact-text-area {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 2.22;
+  text-align: left;
+  color: #282828;
+}
+
+.contact-submit-button > .button {
+  color: #ffffff;
+  padding: 15px 40px;
+  background-color: #cfb569;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-us {
+    padding: 10% 0;
+  }
+  .contact-us-left > .heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .contact-us-left .address,
+  .contact,
+  .email,
+  .website {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  input {
+    padding: 10px 0;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+  textarea {
+    padding: 10px 0;
+  }
+  .contact-text-area {
+    font-size: 12px;
+  }
+  .contact-submit-button > .button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+}

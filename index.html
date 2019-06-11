@@ -1,0 +1,121 @@
+<!doctype html>
+<title>Site Maintenance</title>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- jquery, popperJs and bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<style>
+  body {
+    text-align: center;
+    padding: 150px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  body {
+    font: 20px Helvetica, sans-serif;
+    color: #333;
+  }
+
+  article {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #dc8100;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+</style>
+
+<article>
+  <h1>We&rsquo;ll be back soon!</h1>
+  <div>
+    <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can
+      always <a href="mailto:info@rspaint.com">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
+    <p>&mdash; The Team</p>
+  </div>
+
+  <section class="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12 contact-us-left">
+          <div class="heading">
+            Contact Information
+          </div>
+          <div class="address">
+            <span class="label">Address :&nbsp;</span>
+            <span class="value">65 Dunley Cres, Brampton, ON L6X 5G8</span>
+          </div>
+          <div class="contact">
+            <span class="label">Phone :&nbsp;</span>
+            <span class="value">+1 647-675-0092</span>
+          </div>
+          <div class="email">
+            <span class="label">Email :&nbsp; </span>
+            <span class="value">
+              <a class="contact-us-link" href="mailto:info@rspaint.com">
+                info@rspaint.com
+              </a>
+            </span>
+          </div>
+          <div class="website">
+            <span class="label">Website :&nbsp; </span>
+            <span class="value"><a class="contact-us-link"
+                href="https://rspaint.com/">https://rspaint.com/</a></span>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12 contact-us-right">
+          <div class="contact-us-form">
+            <form action="https://formspree.io/info@rspaint.com" method="POST">
+              <div class="row contact-us-form-row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <input type="text" placeholder="Your Name" name="name" required>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <input type="text" placeholder="Your Email" name="email" required>
+                </div>
+              </div>
+              <div class="row contact-us-form-row">
+                <div class="col-12">
+                  <input type="text" placeholder="Subject" name="subject">
+                </div>
+              </div>
+              <div class="row contact-us-form-row">
+                <div class="col-12">
+                  <textarea rows="6" placeholder="Message" name="message" class="contact-text-area"></textarea>
+                </div>
+              </div>
+              <div class="contact-submit-button">
+                <button type="submit" class="button">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div id="map-canvas" class="map-canvas"></div>
+  </section>
+  <script src="./js/google-map.js"></script>
+</article>
